@@ -7,7 +7,7 @@
 }
 
 header{
-    height: 9vh;
+    height: 6vh;
     box-sizing: border-box;
     background-color: #6E5E49;
     color: white;
@@ -21,20 +21,20 @@ body{
 }
 
 footer{
-    height:7vh;
+    height:6vh;
     box-sizing: border-box;
     background-color: #6E5E49;
     color: white;
 }
 
 .index{
-    margin: 2% 3%;
     display: flex;
     justify-content: flex-start;
     gap: 80px;
 }
 
 .index_conteudo{
+    margin: 2% 3%;
     width:296px;
     display: flex;
     flex-direction: column;
@@ -57,10 +57,29 @@ footer{
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 20px;
+}
+
+.index_botao_2{
+    margin: 25px;
+    display: table-column;
+    justify-content: center;
+    gap: 25px;
+    
+    background-color: #6E5E49;
+    width: 490px;
+    height: 310px;
+    border-radius: 8px;
+    
+    font-size: 22px;
+    font-weight: 600;
+    padding: 12px;
+    text-decoration: none;
+    color: white;
+    font-family: "Montserrat", sans-serif;
 }
 
 .index_botao{
+    margin: 25px;
     display: flex;
     justify-content: center;
     gap: 25px;
@@ -75,6 +94,11 @@ footer{
     font-family: "Montserrat", sans-serif;
 }
 
+.index_botao_2:hover{
+    background-color: #2D2620;
+    transform: scale(1.04);
+}
 .index_botao:hover{
     background-color: #2D2620;
+    transform: scale(1.04);
 }
