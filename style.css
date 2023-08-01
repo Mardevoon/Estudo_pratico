@@ -74,3 +74,7 @@ footer{
     color: white;
     font-family: "Montserrat", sans-serif;
 }
+
+.index_botao:hover{
+    background-color: #2D2620;
+}
