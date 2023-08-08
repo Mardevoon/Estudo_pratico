@@ -1,107 +1,110 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 
 :root{
-    --cor-primaria: #2D2620;
-    --cor-segundaria: #ffffff;
-    --cor-terciaria: #6E5E49;
-    --cor-quaternaria: #D9D9D9;
-    --fonte-primaria: "Montserrat", sans-serif;
+    --cor-primaria: #6E5E49;
+    --cor-segundaria: #D9D9D9;
+    --cor-terciaria: #2D2620;
+    --texto-primario: "Montserrat", sans-serif;
 }
 
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
 
 body{
     box-sizing: border-box;
-    background-color: var(--cor-primaria);
-    color: var(--cor-segundaria);
+    background-color: var(--cor-terciaria);
 }
 
 .cabecalho{
-    color: var(--cor-segundaria);
-    background-color: var(--cor-terciaria);
+    background-color: var(--cor-primaria);
     padding: 16px;
     text-align: center;
 }
 
-.cabecalho_menu{
+.cabecalho-menu{
     display: flex;
     justify-content: center;
-    gap: 80px;
+    gap: 180px;
 }
 
-.cabecalho_menu_link{
-    width: 100px;
+.cabecalho-menu-link{
+    width: 158px;
     padding: 8px;
     border-radius: 8px;
-    border:solid;
-    font-size: 16px;
-    color: var(--cor-quaternaria);
-    font-family: var(--fonte-primaria);
+    border: solid;
+    color: var(--cor-segundaria);
+    font-size: 20px;
+    font-family: var(--texto-primario);
     font-weight: 600;
     text-decoration: none;
 }
 
-.index{
+.menu{
     display: flex;
     justify-content: flex-start;
-    gap: 80px;
 }
 
-.index_conteudo{
-    padding: 2% 3%;
+.menu-apresentacao{
+    padding: 2% 4%;
     width:296px;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.index_conteudo_titulo{
-    font-size: 24px;
-    font-family: var(--fonte-primaria);
+.menu-apresentacao-nome{
+    color: var(--cor-segundaria);
+    font-family: var(--texto-primario);
+    font-size: 28px;
+    font-weight: 600;
 }
 
-.index_conteudo_subtitulo{
-    font-size: 18px;
-    font-family: var(--fonte-primaria);;
+.menu-apresentacao-paragrafo{
+    color: var(--cor-segundaria);
+    font-family: var(--texto-primario);
+    font-size: 22px;
+    font-weight: 400;
 }
 
-.index_botoes{
-    background-color: var(--cor-quaternaria);
-    width: 100vh;
+.fundo{
+    margin: 0px 200px;
+    background-color: var(--cor-segundaria);
+    padding: 40px;
+}
+
+.menu-botoes{
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-.index_botao_portfolio{
-    margin: 20px;
+.menu-botao-portfolio{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--cor-terciaria);
+    background-color: var(--cor-primaria);
     padding: 12px;
     border-radius: 8px;
-    font-size: 22px;        
-    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    font-family: var(--texto-primario);
     font-weight: 600;
     color: var(--cor-segundaria);
     text-decoration: none;
 }
 
-.index_botao{
+.menu-botao{
     margin: 20px;
     display: flex;
     justify-content: center;
-    gap: 25px;
-    background-color: var(--cor-terciaria);
+    gap: 10px;
+    background-color: var(--cor-primaria);
     width: 350px;
     padding: 12px;
     border-radius: 8px;
-    font-size: 22px;        
-    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    font-family: var(--texto-primario);
     font-weight: 600;
     color: var(--cor-segundaria);
     text-decoration: none;
@@ -109,24 +112,32 @@ body{
 
 .rodape{
     color: var(--cor-segundaria);
-    background-color: var(--cor-terciaria);
+    background-color: var(--cor-primaria);
     padding: 16px;
     text-align: center;
-    font-size: 24px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
+    font-size: 20px;
+    font-family: var(--texto-primario);
+    font-weight: 600;
 }
 
-.index_botao_portfolio:hover{
-    background-color: var(--cor-primaria);
-    transform: scale(1.01);
-}
-.index_botao:hover{
-    background-color: var(--cor-primaria);
-    transform: scale(1.01);
-}
-
-.cabecalho_menu_link:hover{
-    background-color: var(--cor-segundaria);
+.paragrafo{
+    padding: 0% 12%;
     color: var(--cor-terciaria);
+    font-family: var(--texto-primario);
+    font-size: 22px;
+}
+
+.cabecalho-menu-link:hover{
+    color: var(--cor-primaria);
+    background-color: var(--cor-segundaria);
+}
+
+.menu-botao-portfolio:hover{
+    background-color: var(--cor-terciaria);
+    transform: scale(1.01);
+}
+
+.menu-botao:hover{
+    background-color: var(--cor-terciaria);
+    transform: scale(1.01);
 }
