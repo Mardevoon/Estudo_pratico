@@ -40,6 +40,10 @@ body{
     font-weight: 600;
     text-decoration: none;
 }
+        .cabecalho-menu-link:hover{
+            color: var(--cor-primaria);
+            background-color: var(--cor-segundaria);
+        }
 
 .menu{
     display: flex;
@@ -93,6 +97,10 @@ body{
     color: var(--cor-segundaria);
     text-decoration: none;
 }
+        .menu-botao-portfolio:hover{
+            background-color: var(--cor-terciaria);
+            transform: scale(1.01);
+        }
 
 .menu-botao{
     margin: 20px;
@@ -109,6 +117,10 @@ body{
     color: var(--cor-segundaria);
     text-decoration: none;
 }
+        .menu-botao:hover{
+            background-color: var(--cor-terciaria);
+            transform: scale(1.01);
+        }
 
 .rodape{
     color: var(--cor-segundaria);
@@ -125,19 +137,4 @@ body{
     color: var(--cor-terciaria);
     font-family: var(--texto-primario);
     font-size: 22px;
-}
-
-.cabecalho-menu-link:hover{
-    color: var(--cor-primaria);
-    background-color: var(--cor-segundaria);
-}
-
-.menu-botao-portfolio:hover{
-    background-color: var(--cor-terciaria);
-    transform: scale(1.01);
-}
-
-.menu-botao:hover{
-    background-color: var(--cor-terciaria);
-    transform: scale(1.01);
 }
